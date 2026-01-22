@@ -16,11 +16,16 @@ body{
     cursor: pointer;
     transform: scale(1.1);
 }
-.h2-container{
-    font-weight: 700px;
+.h2-text{
+    font-weight: 800px;
     font-size: 48px;
     color: #ffffff;
     text-align: center;
+}
+.h3-text{
+    color: #ffffff;
+    font-weight: 700px;
+    font-size: 24px;
 }
 /* header part  */
 /* nav part  */
@@ -185,7 +190,7 @@ nav .btnbar{
 
 /* choose part  */
 
-.choose{
+.choose , .features-host{
     background-color: #230E3D;
     padding: 120px 200px;
     display: flex;
@@ -228,5 +233,58 @@ nav .btnbar{
     grid-row: span 1;
 }
 
+/* features+host part  */
+
+.features-host{
+    gap: 40px;
+}
+/* features */
+
+.features , .host{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.f-card{
+    display: flex;
+    gap: 30px;
+}
+.f-card .card{
+   max-width: 380px;
+   height: 440px;
+   display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.f-card .card iframe{
+    max-width: 380px;
+    min-height: 214px;
+    border-radius: 20px;
+}
+.f-card .card .card-content{
+    padding: 24px;
+    background-color: #340375bf;
+}
+.f-card .card .card-content p{
+    color: #ffffffce;
+    line-height: 24px;
+    font-size: 16px;
+    
+}
+.f-card .card .card-content span{
+    color: #00FF88;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+/* host  */
+/* .host{
+    margin: 0 auto;
+    max-width: 1200px;
+} */
+.h-container{
+    
+}
 
 
