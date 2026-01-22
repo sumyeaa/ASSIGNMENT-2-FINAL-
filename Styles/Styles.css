@@ -4,6 +4,26 @@ body{
     max-width: 1600px;
 }
 /* shared  */
+nav h1, .footer-container .footer-content h1{
+    color: #ffffff;
+
+}
+.h1txt{
+    background: linear-gradient(to right top, #F7E93F 0%, #FB09B4 51% ,#9100F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner , .footer-container{
+    max-height: 760px;
+    min-height: 440px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    text-align: center;
+}
 .btn{
    color: #ffffff;
    background: linear-gradient(to right top, #F7E93F 0%, #FB09B4 51% ,#9100F8 100%);
@@ -27,23 +47,26 @@ body{
     font-weight: 700px;
     font-size: 24px;
 }
+.choose , .features-host{
+    background-color: #230E3D;
+    padding: 120px 200px;
+    display: flex;
+    flex-direction: column;
+}
+.ch-card .card:hover , .f-card .card:hover , .h-content .h-social:hover , .h-container img:hover{
+    transform: scale(1.1);
+}
+
 /* header part  */
+
 /* nav part  */
+
 nav{
     background-color: #1A0B2E;
     display: flex;
     justify-content: space-around;
     padding: 24px 0;
     align-items: center;
-}
-nav h1{
-    color: #ffffff;
-
-}
-.h1txt{
-    background: linear-gradient(to right top, #F7E93F 0%, #FB09B4 51% ,#9100F8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 nav ul{
     display: flex;
@@ -63,18 +86,11 @@ nav .btnbar{
 /* main  */
 
 /* banner part  */
+
 .banner{
-    background-image: url(../assets/hero-bg.png);
-    max-height: 760px;
-    min-height: 440px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;  
-    align-items: center;
-    justify-content: center;
-    display: flex; 
-    text-align: center;
+     background-image: url(../assets/hero-bg.png);
 }
+
 .b-container{
     max-width: 550px;
     margin: 0 auto;
@@ -190,12 +206,6 @@ nav .btnbar{
 
 /* choose part  */
 
-.choose , .features-host{
-    background-color: #230E3D;
-    padding: 120px 200px;
-    display: flex;
-    flex-direction: column;
-}
 .ch-card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -248,6 +258,9 @@ nav .btnbar{
 .f-card{
     display: flex;
     gap: 30px;
+    max-width: 1200px;
+    align-items: center;
+    padding: 40px;
 }
 .f-card .card{
    max-width: 380px;
@@ -260,6 +273,29 @@ nav .btnbar{
     max-width: 380px;
     min-height: 214px;
     border-radius: 20px;
+}
+.youtube{
+    position: relative;
+}
+.playbtn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(to right top, #F7E93F 0%, #FB09B4 51% ,#9100F8 100%);
+  border-radius: 50%;
+  border: none;
+}
+.playbtn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(247, 245, 248, 0.868);
+}
+.playbtn i{
+    font-weight: 700px;
+    font-size: 40px;
+    color: #ffffffce;
 }
 .f-card .card .card-content{
     padding: 24px;
@@ -279,12 +315,63 @@ nav .btnbar{
 }
 
 /* host  */
-/* .host{
-    margin: 0 auto;
-    max-width: 1200px;
-} */
+
 .h-container{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 40px;
+    background-color: #351165;
+    border-radius: 20px;
+    max-width: 1200px;
+
+}
+.h-container > img{
+    box-shadow: 0 0 20px whitesmoke;
+    border-radius: 100%;
+}
+.h-content p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffffce;
+}
+.h-content .h-social{
+    gap: 10px;
+
+}
+.h-content .h-social img{
+    border: 1px solid #533C72;
+    border-radius: 100%;
+    padding:7px;
+}
+
+/* footer part  */
+
+.footer-container{
+    background-image: url(../assets/footer-bg.png);
+}
+.footer-content{
+    max-width: 544px;
+    display: flex;
+    flex-direction: column;
     
+}
+.footer-content h1{
+     font-weight: bolder;
+     font-size: 60px;
+}
+.f-social{
+    display: flex;
+    gap: 40px;
+    text-align: center;
+}
+.social{
+    color: #ffffffce;
+}
+.copywrite{
+    line-height: 24px;
+    color: #ffffffce;
+    font-size: 16px;
 }
 
 

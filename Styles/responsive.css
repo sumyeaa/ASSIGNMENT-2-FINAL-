@@ -1,4 +1,8 @@
-@media screen and (max-width: 576px){
+@media screen and (max-width: 930px){
+    /* header part  */
+
+    /* nav part  */
+
     nav .btn , nav li{
         display: none;
     }
@@ -7,10 +11,25 @@
         color: white;
         background-color: transparent;
         border: none;
+        font-size: 18px;
     }
+    .btnbar:hover{
+        cursor: pointer;
+    }
+
+    /* main part  */
+
+    /* banner part */
+
     .b-container{
         margin-bottom: 40px;
     }
+    .b-content p{
+        max-width: 400px;
+    }
+
+    /* about part  */
+
     .about{
         padding: 40px 20px;
     }
@@ -23,17 +42,23 @@
         grid-template-columns: repeat(2,1fr);
         gap: 40px;
     }
-    .choose{
+
+    /* choose part  */
+
+    .choose , .features-host{
         padding: 0 20px;
         align-items: center;
     }
     .ch-card{
     display: grid;
     grid-template-columns: repeat(1,400px);
-    grid-template-rows: repeat(7,1fr);
+    grid-template-rows: repeat(12,1fr);
     gap: 16px;
     }
     .ch-card :nth-child(1) , .ch-card :nth-child(4) {
+        grid-row: span 3;
+    }
+    .ch-card :nth-child(2) , .ch-card :nth-child(3) , .ch-card :nth-child(5) {
         grid-row: span 2;
     }
     .ch-card .card{
@@ -44,10 +69,39 @@
     .ch-card .card p{
         margin-bottom: 0;
     }
+
+    /* features part  */
+
+    .f-card{
+        flex-direction: column;
+        
+    }
+    .f-card .card{
+        height: 550px;
+    }
+    .features , .host{
+    gap: 15px;
+    }
+
+    /* host part  */
+
+    .h-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* footer part  */
+
+   .f-social{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
     
 }
-@media screen and (min-width: 577px) and (max-width: 1500px)
+@media screen and (min-width: 931px) and (max-width: 1500px)
 {
+    /* about part  */
+
     .about{
         max-width: 100%;
         padding: 20px 8px;
@@ -61,15 +115,21 @@
         grid-template-columns: repeat(2,1fr);
         gap: 70px;
     }
-    .choose{
+
+    /* choose part  */
+
+    .choose , .features-host{
         padding: 0 50px;
         align-items: center;
     }
     .ch-card{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,250px);
     gap: 16px;
+    }
+    .ch-card :nth-child(3) {
+        grid-column: span 2;
     }
     .ch-card .card{
         padding: 24px;
@@ -77,5 +137,15 @@
     }
     .ch-card .card p{
         margin-bottom: 0;
+    }
+
+    /* features part  */
+
+    .f-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+     .f-card .card{
+        height: 520px;
     }
 }
