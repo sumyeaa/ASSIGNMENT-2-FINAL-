@@ -157,3 +157,26 @@ nav .btnbar{
     line-height: 20px;
     color: #ffffffce;
 }
+.about > p{
+    padding: 0 300px;
+}
+.a-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.a-card .card h1{
+   color: #00FF88;
+   font-size: 48px;
+   font-weight: 900px;  
+   text-align: center; 
+}
+.a-card .card h1 i{
+    font-weight: 500px;
+    font-size: 35px;
+}
+.a-card .card p{
+    line-height: 20px;
+    font-size: 16px;
+    color: #ffffffce;
+}

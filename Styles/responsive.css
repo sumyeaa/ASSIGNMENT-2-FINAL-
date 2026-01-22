@@ -1,5 +1,5 @@
 @media screen and (max-width: 576px){
-    nav .btn , li{
+    nav .btn , nav li{
         display: none;
     }
     .btnbar {
@@ -13,5 +13,30 @@
     }
     .about{
         padding: 40px 20px;
+    }
+    .about > p{
+    padding: 0 30px;
+}
+
+    .a-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 1500px)
+{
+    .about{
+        max-width: 100%;
+        padding: 20px 8px;
+        flex-wrap: wrap;
+    }
+    .about > p{
+        padding: 0 100px;
+    }
+     .a-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 70px;
     }
 }
