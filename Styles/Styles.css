@@ -1,7 +1,7 @@
 /* Global */
 body{
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 100%;
 }
 /* shared  */
 nav h1, .footer-container .footer-content h1{
@@ -53,10 +53,9 @@ nav h1, .footer-container .footer-content h1{
     display: flex;
     flex-direction: column;
 }
-.ch-card .card:hover , .f-card .card:hover , .h-content .h-social:hover , .h-container img:hover{
+ .f-card .card:hover , .h-content .h-social:hover , .h-container img:hover{
     transform: scale(1.1);
 }
-
 /* header part  */
 
 /* nav part  */
@@ -217,7 +216,7 @@ nav .btnbar{
     display: flex;
     flex-direction: column;
     background-color: #351165;
-    border-radius: 24px;
+    border-radius: 24px;margin-bottom: 30px;
 }
 .ch-card .card img{
     max-width: 40px;
@@ -270,8 +269,8 @@ nav .btnbar{
     border-radius: 20px;
 }
 .f-card .card iframe{
-    max-width: 380px;
-    min-height: 214px;
+    max-width: 100%;
+    height: auto;
     border-radius: 20px;
 }
 .youtube{
