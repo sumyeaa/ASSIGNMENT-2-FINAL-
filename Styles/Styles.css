@@ -194,12 +194,39 @@ nav .btnbar{
 .ch-card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 225px 225px 273px;
     gap: 30px;
+}
+.ch-card .card{
+    padding: 40px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #351165;
+    border-radius: 24px;
+}
+.ch-card .card img{
+    max-width: 40px;
+}
+.ch-card .card h3{
+    color: #ffffff;
+    font-weight: 700px;
+    font-size: 24px;
+    white-space: nowrap;
+}
+.ch-card .card p{
+    color: #ffffffce;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
 }
 .ch-card :nth-child(1){
     grid-row: span 2;
+    grid-column: span 1;
 }
 .ch-card :nth-child(2) , .ch-card :nth-child(3) , .ch-card :nth-child(4){
     grid-column: span 2;
+    grid-row: span 1;
 }
+
+
 
