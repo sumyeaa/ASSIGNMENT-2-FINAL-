@@ -1,0 +1,159 @@
+/* Global */
+body{
+    margin: 0 auto;
+    max-width: 1600px;
+}
+/* shared  */
+.btn{
+   color: #ffffff;
+   background: linear-gradient(to right top, #F7E93F 0%, #FB09B4 51% ,#9100F8 100%);
+   padding: 20px 12px;
+   border-radius: 10000px;
+   text-align: center;
+   gap: 5px;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.h2-container{
+    font-weight: 700px;
+    font-size: 48px;
+}
+/* header part  */
+/* nav part  */
+nav{
+    background-color: #1A0B2E;
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 0;
+    align-items: center;
+}
+nav h1{
+    color: #ffffff;
+
+}
+.h1txt{
+    background: linear-gradient(to right top, #F7E93F 0%, #FB09B4 51% ,#9100F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav ul{
+    display: flex;
+    gap: 32px;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+nav .btnbar{
+    display: none;
+}
+
+/* main  */
+
+/* banner part  */
+.banner{
+    background-image: url(../assets/hero-bg.png);
+    max-height: 760px;
+    min-height: 440px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    text-align: center;
+}
+.b-container{
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 101px;
+}
+.b-img{
+    position: relative;
+}
+.b-img .cir{
+    max-width: 350px;
+    min-width: 200px;
+}
+@keyframes mic-anime {
+     0% { 
+          transform: translate(-50%, -50%) translateY(0); 
+        }
+  50%   { 
+          transform: translate(-50%, -50%) translateY(-30px);
+        }
+  100%  { 
+          transform: translate(-50%, -50%) translateY(0); 
+        }
+}
+.b-img .mic{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    animation: mic-anime ease-in-out 1s infinite alternate;
+}
+.new{
+    background-color: #00FF88;
+    position: absolute;
+    left: 328px;
+    top: 31px;
+    padding: 16px 8px;
+    border-radius: 1000px;
+    color: #1A0B2E;
+    box-shadow: 0 0 30px rgb(0, 255, 136);
+}
+.b-content h1{
+    color: #ffffff;
+    font-weight: 800px; 
+    font-size: 60px;
+}
+.b-content p{
+   color: #ffffffce; 
+   font-size: 16px;
+}
+.b-btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-trans{
+    color: #00FF88;
+    border: #00FF88 solid 1px;
+    border-radius: 10000px;
+    padding: 20px 12px;
+    text-align: center;
+}
+.btn-trans:hover{
+    cursor: pointer;
+    background-color: rgb(122, 152, 111);
+    transform: scale(1.1);
+}
+
+/* about part */
+
+.about{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 200px;
+    color: #ffffff;
+    background-color: #1A0B2E;
+}
+.about p{
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffffce;
+}

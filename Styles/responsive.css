@@ -1,0 +1,17 @@
+@media screen and (max-width: 576px){
+    nav .btn , li{
+        display: none;
+    }
+    .btnbar {
+        display: block !important;
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+    .b-container{
+        margin-bottom: 40px;
+    }
+    .about{
+        padding: 40px 20px;
+    }
+}
