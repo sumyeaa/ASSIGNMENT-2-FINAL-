@@ -126,8 +126,8 @@ nav .btnbar{
 .new{
     background-color: #00FF88;
     position: absolute;
-    left: 328px;
-    top: 31px;
+    left: 50%;
+    transform: translateX(100%);
     padding: 16px 8px;
     border-radius: 1000px;
     color: #1A0B2E;
