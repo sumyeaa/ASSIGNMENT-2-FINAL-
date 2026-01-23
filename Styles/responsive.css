@@ -79,7 +79,8 @@
         
     }
     .f-card .card{
-        height: 550px;
+        /* height: 550px; */
+        max-width: 95%;
     }
     .features , .host{
     gap: 15px;
@@ -100,7 +101,7 @@
    }
     
 }
-@media screen and (min-width: 577px) and (max-width: 1500px)
+@media screen and (min-width: 577px) and (max-width: 1200px)
 {
     /* about part  */
 
@@ -159,9 +160,12 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding: 10px;
+        max-width: 95%;
         /* gap: 10px; */
     }
      .f-card .card{
         /* height: 520px; */
+        max-width: 100%;
+
     }
 }
